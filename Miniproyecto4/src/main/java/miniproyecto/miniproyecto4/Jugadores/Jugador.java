@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package miniproyecto.Jugadores;
+package miniproyecto.miniproyecto4.Jugadores;
 
-import miniproyecto.Enum.EnumPosicion;
+import miniproyecto.miniproyecto4.Enum.EnumPosicion;
 
 /**
  *
@@ -21,12 +21,12 @@ public class Jugador {
 	private int velocidad;
 	private int resistencia;
 
-	public Jugador(String nombre, EnumPosicion posicion, int edad, int juegos, int arranque, int velocidad, int resistencia) {
+	public Jugador(String nombre, EnumPosicion posicion, int edad, int arranque, int velocidad, int resistencia) {
 		this.nombre = nombre;
 		this.posicion = posicion;
 		this.edad = edad;
 		this.edadInicial = edad;
-		this.juegos = juegos;
+		this.juegos = 0;
 		this.arranque = arranque;
 		this.velocidad = velocidad;
 		this.resistencia = resistencia;
