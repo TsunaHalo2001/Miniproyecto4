@@ -45,6 +45,7 @@ public class Partido extends javax.swing.JFrame {
         AñadirDefensasBts = new javax.swing.JButton();
         AñadirMedioBtn = new javax.swing.JButton();
         AñadirDelanteroBtn = new javax.swing.JButton();
+        VolverDel2 = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
@@ -100,7 +101,7 @@ public class Partido extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Seleccione los Jugadores:");
-        Bg_4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+        Bg_4.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 10, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setText("Seleccionados:");
@@ -125,6 +126,9 @@ public class Partido extends javax.swing.JFrame {
         AñadirDelanteroBtn.setText("Añadir");
         AñadirDelanteroBtn.setBorder(null);
         Bg_4.add(AñadirDelanteroBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 100, 40));
+
+        VolverDel2.setText("<");
+        Bg_4.add(VolverDel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 38, 32));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -153,6 +157,7 @@ public class Partido extends javax.swing.JFrame {
     private javax.swing.JList<String> Lista_defensas;
     private javax.swing.JList<String> Lista_delanteros;
     private javax.swing.JList<String> Lista_seleccionados;
+    private javax.swing.JButton VolverDel2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

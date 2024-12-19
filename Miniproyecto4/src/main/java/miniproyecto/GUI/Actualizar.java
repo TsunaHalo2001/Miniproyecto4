@@ -35,6 +35,7 @@ public class Actualizar extends javax.swing.JFrame {
         ArqueroRe = new javax.swing.JTextField();
         ArqueroAlt = new javax.swing.JTextField();
         ActualizarArqueroBtn = new javax.swing.JButton();
+        VolverAr2 = new javax.swing.JButton();
         Defensa = new javax.swing.JPanel();
         ArqueroE1 = new javax.swing.JTextField();
         ArqueroArr1 = new javax.swing.JTextField();
@@ -42,6 +43,7 @@ public class Actualizar extends javax.swing.JFrame {
         ArqueroRe1 = new javax.swing.JTextField();
         DefensaAgi = new javax.swing.JTextField();
         ActualizarDefensaBtn = new javax.swing.JButton();
+        VolverDef2 = new javax.swing.JButton();
         Medio = new javax.swing.JPanel();
         ArqueroE2 = new javax.swing.JTextField();
         ArqueroArr2 = new javax.swing.JTextField();
@@ -49,6 +51,7 @@ public class Actualizar extends javax.swing.JFrame {
         ArqueroRe2 = new javax.swing.JTextField();
         ArqueroAlt2 = new javax.swing.JTextField();
         ActualizarMedioBtn = new javax.swing.JButton();
+        VolverMed2 = new javax.swing.JButton();
         Delantero = new javax.swing.JPanel();
         DelanteroEdad = new javax.swing.JTextField();
         DelanteroArr = new javax.swing.JTextField();
@@ -56,6 +59,7 @@ public class Actualizar extends javax.swing.JFrame {
         DelanteroRe = new javax.swing.JTextField();
         DelanteroPre = new javax.swing.JTextField();
         ActualizarDelanteroBtn = new javax.swing.JButton();
+        VolverDel2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -93,6 +97,8 @@ public class Actualizar extends javax.swing.JFrame {
         ActualizarArqueroBtn.setText("Actualizar");
         ActualizarArqueroBtn.setBorder(null);
 
+        VolverAr2.setText("<");
+
         javax.swing.GroupLayout ArqueroLayout = new javax.swing.GroupLayout(Arquero);
         Arquero.setLayout(ArqueroLayout);
         ArqueroLayout.setHorizontalGroup(
@@ -116,11 +122,15 @@ public class Actualizar extends javax.swing.JFrame {
                                     .addComponent(ArqueroAlt, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addComponent(ArqueroVe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(28, Short.MAX_VALUE))))
+            .addGroup(ArqueroLayout.createSequentialGroup()
+                .addComponent(VolverAr2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         ArqueroLayout.setVerticalGroup(
             ArqueroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ArqueroLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverAr2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ArqueroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ArqueroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ArqueroE))
@@ -170,6 +180,8 @@ public class Actualizar extends javax.swing.JFrame {
         ActualizarDefensaBtn.setText("Actualizar");
         ActualizarDefensaBtn.setBorder(null);
 
+        VolverDef2.setText("<");
+
         javax.swing.GroupLayout DefensaLayout = new javax.swing.GroupLayout(Defensa);
         Defensa.setLayout(DefensaLayout);
         DefensaLayout.setHorizontalGroup(
@@ -191,11 +203,15 @@ public class Actualizar extends javax.swing.JFrame {
                             .addComponent(ArqueroRe1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DefensaAgi, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(28, Short.MAX_VALUE))))
+            .addGroup(DefensaLayout.createSequentialGroup()
+                .addComponent(VolverDef2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         DefensaLayout.setVerticalGroup(
             DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DefensaLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverDef2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ArqueroRe1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ArqueroE1))
@@ -244,6 +260,8 @@ public class Actualizar extends javax.swing.JFrame {
         ActualizarMedioBtn.setText("Actualizar");
         ActualizarMedioBtn.setBorder(null);
 
+        VolverMed2.setText("<");
+
         javax.swing.GroupLayout MedioLayout = new javax.swing.GroupLayout(Medio);
         Medio.setLayout(MedioLayout);
         MedioLayout.setHorizontalGroup(
@@ -266,15 +284,19 @@ public class Actualizar extends javax.swing.JFrame {
                     .addGroup(MedioLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(ActualizarMedioBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(94, 94, 94))))
+                        .addGap(93, 93, 93))))
+            .addGroup(MedioLayout.createSequentialGroup()
+                .addComponent(VolverMed2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         MedioLayout.setVerticalGroup(
             MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MedioLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverMed2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ArqueroRe2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ArqueroE2, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE))
+                    .addComponent(ArqueroE2))
                 .addGap(30, 30, 30)
                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ArqueroAlt2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -283,7 +305,7 @@ public class Actualizar extends javax.swing.JFrame {
                 .addComponent(ArqueroVe2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addComponent(ActualizarMedioBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(36, 36, 36))
+                .addGap(38, 38, 38))
         );
 
         Create_Players.addTab("Medio", Medio);
@@ -320,6 +342,8 @@ public class Actualizar extends javax.swing.JFrame {
         ActualizarDelanteroBtn.setText("Actualizar");
         ActualizarDelanteroBtn.setBorder(null);
 
+        VolverDel2.setText("<");
+
         javax.swing.GroupLayout DelanteroLayout = new javax.swing.GroupLayout(Delantero);
         Delantero.setLayout(DelanteroLayout);
         DelanteroLayout.setHorizontalGroup(
@@ -328,26 +352,28 @@ public class Actualizar extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DelanteroLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(ActualizarDelanteroBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(93, 93, 93))
-                    .addGroup(DelanteroLayout.createSequentialGroup()
                         .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(DelanteroLayout.createSequentialGroup()
-                                .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(DelanteroEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(DelanteroArr, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(42, 42, 42)
-                                .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(DelanteroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(DelanteroPre, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(DelanteroVe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(28, Short.MAX_VALUE))))
+                            .addComponent(DelanteroEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DelanteroArr, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(42, 42, 42)
+                        .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(DelanteroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DelanteroPre, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(DelanteroVe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(28, Short.MAX_VALUE))
+            .addGroup(DelanteroLayout.createSequentialGroup()
+                .addComponent(VolverDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DelanteroLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(ActualizarDelanteroBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(93, 93, 93))
         );
         DelanteroLayout.setVerticalGroup(
             DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DelanteroLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverDel2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(DelanteroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DelanteroEdad))
@@ -357,9 +383,9 @@ public class Actualizar extends javax.swing.JFrame {
                     .addComponent(DelanteroArr, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(DelanteroVe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(26, 26, 26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
                 .addComponent(ActualizarDelanteroBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addGap(38, 38, 38))
         );
 
         Create_Players.addTab("Delantero", Delantero);
@@ -460,5 +486,9 @@ public class Actualizar extends javax.swing.JFrame {
     private javax.swing.JTextField DelanteroRe;
     private javax.swing.JTextField DelanteroVe;
     private javax.swing.JPanel Medio;
+    private javax.swing.JButton VolverAr2;
+    private javax.swing.JButton VolverDef2;
+    private javax.swing.JButton VolverDel2;
+    private javax.swing.JButton VolverMed2;
     // End of variables declaration//GEN-END:variables
 }
