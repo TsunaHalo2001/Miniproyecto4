@@ -21,12 +21,12 @@ public class Jugador {
 	private int velocidad;
 	private int resistencia;
 
-	public Jugador(String nombre, EnumPosicion posicion, int edad, int juegos, int arranque, int velocidad, int resistencia) {
+	public Jugador(String nombre, EnumPosicion posicion, int edad, int arranque, int velocidad, int resistencia) {
 		this.nombre = nombre;
 		this.posicion = posicion;
 		this.edad = edad;
 		this.edadInicial = edad;
-		this.juegos = juegos;
+		this.juegos = 0;
 		this.arranque = arranque;
 		this.velocidad = velocidad;
 		this.resistencia = resistencia;
