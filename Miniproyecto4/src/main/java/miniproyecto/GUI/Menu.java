@@ -50,13 +50,14 @@ public class Menu extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(ListaJ);
 
-        Bg_1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 170, 390));
+        Bg_1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 170, 360));
 
+        btnDel.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnDel.setText("Eliminar");
         btnDel.setBorder(null);
-        Bg_1.add(btnDel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, 100, 30));
+        Bg_1.add(btnDel, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 100, 30));
 
-        btnRes.setBackground(new java.awt.Color(0, 29, 24));
+        btnRes.setBackground(new java.awt.Color(30, 30, 30));
         btnRes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniproyecto/IMG/IMG/Img/Re.png"))); // NOI18N
         btnRes.setBorder(null);
         btnRes.addActionListener(new java.awt.event.ActionListener() {
@@ -64,32 +65,35 @@ public class Menu extends javax.swing.JFrame {
                 btnResActionPerformed(evt);
             }
         });
-        Bg_1.add(btnRes, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 40, 40));
+        Bg_1.add(btnRes, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, 50, 40));
 
+        btnMatch.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnMatch.setText("Partido");
         btnMatch.setBorder(null);
         Bg_1.add(btnMatch, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 30, 150, 60));
 
+        btnCreate.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnCreate.setText("Crear");
         btnCreate.setBorder(null);
         Bg_1.add(btnCreate, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 150, 60));
 
+        btnUpd.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnUpd.setText("Actualizar");
         btnUpd.setBorder(null);
         Bg_1.add(btnUpd, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 30, 150, 60));
 
         IMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/miniproyecto/IMG/IMG/Img/Imagen_inicio.jpg"))); // NOI18N
-        Bg_1.add(IMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 130, 400, 300));
+        Bg_1.add(IMG, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 110, 400, 300));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Bg_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Bg_1, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Bg_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Bg_1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
         );
 
         pack();
@@ -111,7 +115,7 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JButton btnCreate;
     private javax.swing.JButton btnDel;
     private javax.swing.JButton btnMatch;
-    private javax.swing.JButton btnRes;
+    public javax.swing.JButton btnRes;
     private javax.swing.JButton btnUpd;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables

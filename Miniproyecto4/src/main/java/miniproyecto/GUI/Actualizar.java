@@ -65,6 +65,8 @@ public class Actualizar extends javax.swing.JFrame {
 
         Bg_3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Arquero.setPreferredSize(new java.awt.Dimension(700, 450));
+
         ArqueroE.setForeground(new java.awt.Color(255, 255, 255));
         ArqueroE.setText("Edad");
         ArqueroE.addActionListener(new java.awt.event.ActionListener() {
@@ -456,39 +458,39 @@ public class Actualizar extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton ActualizarArqueroBtn;
-    private javax.swing.JButton ActualizarDefensaBtn;
-    private javax.swing.JButton ActualizarDelanteroBtn;
-    private javax.swing.JButton ActualizarMedioBtn;
+    public javax.swing.JButton ActualizarArqueroBtn;
+    public javax.swing.JButton ActualizarDefensaBtn;
+    public javax.swing.JButton ActualizarDelanteroBtn;
+    public javax.swing.JButton ActualizarMedioBtn;
     private javax.swing.JPanel Arquero;
-    private javax.swing.JTextField ArqueroAlt;
-    private javax.swing.JTextField ArqueroAlt2;
-    private javax.swing.JTextField ArqueroArr;
-    private javax.swing.JTextField ArqueroArr1;
-    private javax.swing.JTextField ArqueroArr2;
-    private javax.swing.JTextField ArqueroE;
-    private javax.swing.JTextField ArqueroE1;
-    private javax.swing.JTextField ArqueroE2;
-    private javax.swing.JTextField ArqueroRe;
-    private javax.swing.JTextField ArqueroRe1;
-    private javax.swing.JTextField ArqueroRe2;
-    private javax.swing.JTextField ArqueroVe;
-    private javax.swing.JTextField ArqueroVe1;
-    private javax.swing.JTextField ArqueroVe2;
+    public javax.swing.JTextField ArqueroAlt;
+    public javax.swing.JTextField ArqueroAlt2;
+    public javax.swing.JTextField ArqueroArr;
+    public javax.swing.JTextField ArqueroArr1;
+    public javax.swing.JTextField ArqueroArr2;
+    public javax.swing.JTextField ArqueroE;
+    public javax.swing.JTextField ArqueroE1;
+    public javax.swing.JTextField ArqueroE2;
+    public javax.swing.JTextField ArqueroRe;
+    public javax.swing.JTextField ArqueroRe1;
+    public javax.swing.JTextField ArqueroRe2;
+    public javax.swing.JTextField ArqueroVe;
+    public javax.swing.JTextField ArqueroVe1;
+    public javax.swing.JTextField ArqueroVe2;
     private javax.swing.JPanel Bg_3;
-    private javax.swing.JTabbedPane Create_Players;
+    public javax.swing.JTabbedPane Create_Players;
     private javax.swing.JPanel Defensa;
-    private javax.swing.JTextField DefensaAgi;
+    public javax.swing.JTextField DefensaAgi;
     private javax.swing.JPanel Delantero;
-    private javax.swing.JTextField DelanteroArr;
-    private javax.swing.JTextField DelanteroEdad;
-    private javax.swing.JTextField DelanteroPre;
-    private javax.swing.JTextField DelanteroRe;
-    private javax.swing.JTextField DelanteroVe;
+    public javax.swing.JTextField DelanteroArr;
+    public javax.swing.JTextField DelanteroEdad;
+    public javax.swing.JTextField DelanteroPre;
+    public javax.swing.JTextField DelanteroRe;
+    public javax.swing.JTextField DelanteroVe;
     private javax.swing.JPanel Medio;
-    private javax.swing.JButton VolverAr2;
-    private javax.swing.JButton VolverDef2;
-    private javax.swing.JButton VolverDel2;
-    private javax.swing.JButton VolverMed2;
+    public javax.swing.JButton VolverAr2;
+    public javax.swing.JButton VolverDef2;
+    public javax.swing.JButton VolverDel2;
+    public javax.swing.JButton VolverMed2;
     // End of variables declaration//GEN-END:variables
 }

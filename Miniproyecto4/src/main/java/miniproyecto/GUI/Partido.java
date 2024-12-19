@@ -113,11 +113,11 @@ public class Partido extends javax.swing.JFrame {
 
         AñadirArquerosBtn.setText("Añadir");
         AñadirArquerosBtn.setBorder(null);
-        Bg_4.add(AñadirArquerosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 350, 100, 40));
+        Bg_4.add(AñadirArquerosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 100, 40));
 
         AñadirDefensasBts.setText("Añadir");
         AñadirDefensasBts.setBorder(null);
-        Bg_4.add(AñadirDefensasBts, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 350, 100, 40));
+        Bg_4.add(AñadirDefensasBts, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 100, 40));
 
         AñadirMedioBtn.setText("Añadir");
         AñadirMedioBtn.setBorder(null);
@@ -146,18 +146,18 @@ public class Partido extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AñadirArquerosBtn;
-    private javax.swing.JButton AñadirDefensasBts;
-    private javax.swing.JButton AñadirDelanteroBtn;
-    private javax.swing.JButton AñadirMedioBtn;
+    public javax.swing.JButton AñadirArquerosBtn;
+    public javax.swing.JButton AñadirDefensasBts;
+    public javax.swing.JButton AñadirDelanteroBtn;
+    public javax.swing.JButton AñadirMedioBtn;
     private javax.swing.JPanel Bg_4;
-    private javax.swing.JButton BtnSeleccionados;
-    private javax.swing.JList<String> LIsta_arqueros;
-    private javax.swing.JList<String> LIsta_medios;
-    private javax.swing.JList<String> Lista_defensas;
-    private javax.swing.JList<String> Lista_delanteros;
-    private javax.swing.JList<String> Lista_seleccionados;
-    private javax.swing.JButton VolverDel2;
+    public javax.swing.JButton BtnSeleccionados;
+    public javax.swing.JList<String> LIsta_arqueros;
+    public javax.swing.JList<String> LIsta_medios;
+    public javax.swing.JList<String> Lista_defensas;
+    public javax.swing.JList<String> Lista_delanteros;
+    public javax.swing.JList<String> Lista_seleccionados;
+    public javax.swing.JButton VolverDel2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
