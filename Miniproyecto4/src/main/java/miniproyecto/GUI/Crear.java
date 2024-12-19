@@ -37,6 +37,7 @@ public class Crear extends javax.swing.JFrame {
         ArqueroRe = new javax.swing.JTextField();
         ArqueroAlt = new javax.swing.JTextField();
         GuardarArqueroBtn = new javax.swing.JButton();
+        VolverAr = new javax.swing.JButton();
         Defensa = new javax.swing.JPanel();
         DefensaNom = new javax.swing.JTextField();
         DefensaEd = new javax.swing.JTextField();
@@ -45,6 +46,7 @@ public class Crear extends javax.swing.JFrame {
         DefensaRe = new javax.swing.JTextField();
         DefensaAgi = new javax.swing.JTextField();
         GuardarDefensaBtn = new javax.swing.JButton();
+        VolverDef = new javax.swing.JButton();
         Medio = new javax.swing.JPanel();
         MedioNom = new javax.swing.JTextField();
         MedioEdad = new javax.swing.JTextField();
@@ -53,6 +55,7 @@ public class Crear extends javax.swing.JFrame {
         MedioRe = new javax.swing.JTextField();
         MedioIQ = new javax.swing.JTextField();
         GuardarArqueroBtn2 = new javax.swing.JButton();
+        VolverMed = new javax.swing.JButton();
         Delantero = new javax.swing.JPanel();
         DelanteroNom = new javax.swing.JTextField();
         DelanteroEdad = new javax.swing.JTextField();
@@ -61,6 +64,7 @@ public class Crear extends javax.swing.JFrame {
         DelanteroRe = new javax.swing.JTextField();
         DelanteroPre = new javax.swing.JTextField();
         GuardarDelanteroBtn = new javax.swing.JButton();
+        VolverDel = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -117,6 +121,8 @@ public class Crear extends javax.swing.JFrame {
         GuardarArqueroBtn.setText("Agregar");
         GuardarArqueroBtn.setBorder(null);
 
+        VolverAr.setText("<");
+
         javax.swing.GroupLayout ArqueroLayout = new javax.swing.GroupLayout(Arquero);
         Arquero.setLayout(ArqueroLayout);
         ArqueroLayout.setHorizontalGroup(
@@ -141,11 +147,15 @@ public class Crear extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(GuardarArqueroBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(93, 93, 93))))
+            .addGroup(ArqueroLayout.createSequentialGroup()
+                .addComponent(VolverAr, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         ArqueroLayout.setVerticalGroup(
             ArqueroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ArqueroLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverAr, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(ArqueroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ArqueroN, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(ArqueroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -204,6 +214,8 @@ public class Crear extends javax.swing.JFrame {
         GuardarDefensaBtn.setText("Agregar");
         GuardarDefensaBtn.setBorder(null);
 
+        VolverDef.setText("<");
+
         javax.swing.GroupLayout DefensaLayout = new javax.swing.GroupLayout(Defensa);
         Defensa.setLayout(DefensaLayout);
         DefensaLayout.setHorizontalGroup(
@@ -228,11 +240,15 @@ public class Crear extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(GuardarDefensaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(93, 93, 93))))
+            .addGroup(DefensaLayout.createSequentialGroup()
+                .addComponent(VolverDef, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         DefensaLayout.setVerticalGroup(
             DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DefensaLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverDef, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(DefensaNom, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DefensaRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -291,6 +307,8 @@ public class Crear extends javax.swing.JFrame {
         GuardarArqueroBtn2.setText("Agregar");
         GuardarArqueroBtn2.setBorder(null);
 
+        VolverMed.setText("<");
+
         javax.swing.GroupLayout MedioLayout = new javax.swing.GroupLayout(Medio);
         Medio.setLayout(MedioLayout);
         MedioLayout.setHorizontalGroup(
@@ -315,11 +333,15 @@ public class Crear extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(GuardarArqueroBtn2, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(93, 93, 93))))
+            .addGroup(MedioLayout.createSequentialGroup()
+                .addComponent(VolverMed, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         MedioLayout.setVerticalGroup(
             MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MedioLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverMed, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(MedioNom, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(MedioRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -383,6 +405,8 @@ public class Crear extends javax.swing.JFrame {
         GuardarDelanteroBtn.setText("Agregar");
         GuardarDelanteroBtn.setBorder(null);
 
+        VolverDel.setText("<");
+
         javax.swing.GroupLayout DelanteroLayout = new javax.swing.GroupLayout(Delantero);
         Delantero.setLayout(DelanteroLayout);
         DelanteroLayout.setHorizontalGroup(
@@ -407,11 +431,15 @@ public class Crear extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(GuardarDelanteroBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(93, 93, 93))))
+            .addGroup(DelanteroLayout.createSequentialGroup()
+                .addComponent(VolverDel, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         DelanteroLayout.setVerticalGroup(
             DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DelanteroLayout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addComponent(VolverDel, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(DelanteroNom, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(DelanteroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -518,39 +546,43 @@ public class Crear extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Arquero;
-    private javax.swing.JTextField ArqueroAlt;
-    private javax.swing.JTextField ArqueroArr;
-    private javax.swing.JTextField ArqueroE;
-    private javax.swing.JTextField ArqueroN;
-    private javax.swing.JTextField ArqueroRe;
-    private javax.swing.JTextField ArqueroVe;
+    public javax.swing.JTextField ArqueroAlt;
+    public javax.swing.JTextField ArqueroArr;
+    public javax.swing.JTextField ArqueroE;
+    public javax.swing.JTextField ArqueroN;
+    public javax.swing.JTextField ArqueroRe;
+    public javax.swing.JTextField ArqueroVe;
     private javax.swing.JPanel Bg_2;
-    private javax.swing.JTabbedPane Create_Players;
+    public javax.swing.JTabbedPane Create_Players;
     private javax.swing.JPanel Defensa;
-    private javax.swing.JTextField DefensaAgi;
-    private javax.swing.JTextField DefensaArr;
-    private javax.swing.JTextField DefensaEd;
-    private javax.swing.JTextField DefensaNom;
-    private javax.swing.JTextField DefensaRe;
-    private javax.swing.JTextField DefensaVe;
-    private javax.swing.JTextField DefensaVel;
+    public javax.swing.JTextField DefensaAgi;
+    public javax.swing.JTextField DefensaArr;
+    public javax.swing.JTextField DefensaEd;
+    public javax.swing.JTextField DefensaNom;
+    public javax.swing.JTextField DefensaRe;
+    public javax.swing.JTextField DefensaVe;
+    public javax.swing.JTextField DefensaVel;
     private javax.swing.JPanel Delantero;
-    private javax.swing.JTextField DelanteroArr;
-    private javax.swing.JTextField DelanteroEdad;
-    private javax.swing.JTextField DelanteroNom;
-    private javax.swing.JTextField DelanteroPre;
-    private javax.swing.JTextField DelanteroRe;
-    private javax.swing.JTextField DelanteroVe;
-    private javax.swing.JButton GuardarArqueroBtn;
-    private javax.swing.JButton GuardarArqueroBtn2;
-    private javax.swing.JButton GuardarDefensaBtn;
-    private javax.swing.JButton GuardarDelanteroBtn;
+    public javax.swing.JTextField DelanteroArr;
+    public javax.swing.JTextField DelanteroEdad;
+    public javax.swing.JTextField DelanteroNom;
+    public javax.swing.JTextField DelanteroPre;
+    public javax.swing.JTextField DelanteroRe;
+    public javax.swing.JTextField DelanteroVe;
+    public javax.swing.JButton GuardarArqueroBtn;
+    public javax.swing.JButton GuardarArqueroBtn2;
+    public javax.swing.JButton GuardarDefensaBtn;
+    public javax.swing.JButton GuardarDelanteroBtn;
     private javax.swing.JPanel Medio;
-    private javax.swing.JTextField MedioArr;
-    private javax.swing.JTextField MedioEdad;
-    private javax.swing.JTextField MedioIQ;
-    private javax.swing.JTextField MedioNom;
-    private javax.swing.JTextField MedioRe;
+    public javax.swing.JTextField MedioArr;
+    public javax.swing.JTextField MedioEdad;
+    public javax.swing.JTextField MedioIQ;
+    public javax.swing.JTextField MedioNom;
+    public javax.swing.JTextField MedioRe;
+    public javax.swing.JButton VolverAr;
+    public javax.swing.JButton VolverDef;
+    private javax.swing.JButton VolverDel;
+    public javax.swing.JButton VolverMed;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
