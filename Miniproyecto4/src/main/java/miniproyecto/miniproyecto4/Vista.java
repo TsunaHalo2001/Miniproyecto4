@@ -11,6 +11,7 @@ public class Vista {
 	    Crear crear;
 	    Actualizar actualizar;
 	    Partido partido;
+        
 
         public Vista() {
             this.menu = new Menu();
