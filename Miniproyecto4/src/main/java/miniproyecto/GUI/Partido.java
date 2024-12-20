@@ -47,14 +47,17 @@ public class Partido extends javax.swing.JFrame {
         AñadirDefensasBts = new javax.swing.JButton();
         AñadirMedioBtn = new javax.swing.JButton();
         AñadirDelanteroBtn = new javax.swing.JButton();
-        VolverDel2 = new javax.swing.JButton();
+        VolverPartido = new javax.swing.JButton();
 
         jLabel2.setText("jLabel2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        Bg_4.setBackground(new java.awt.Color(51, 51, 51));
         Bg_4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Lista_defensas.setBackground(new java.awt.Color(153, 153, 153));
+        Lista_defensas.setForeground(new java.awt.Color(0, 0, 0));
         Lista_defensas.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -64,6 +67,8 @@ public class Partido extends javax.swing.JFrame {
 
         Bg_4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 50, 130, 280));
 
+        LIsta_arqueros.setBackground(new java.awt.Color(153, 153, 153));
+        LIsta_arqueros.setForeground(new java.awt.Color(0, 0, 0));
         LIsta_arqueros.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -73,6 +78,8 @@ public class Partido extends javax.swing.JFrame {
 
         Bg_4.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 130, 280));
 
+        LIsta_medios.setBackground(new java.awt.Color(153, 153, 153));
+        LIsta_medios.setForeground(new java.awt.Color(0, 0, 0));
         LIsta_medios.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -82,7 +89,9 @@ public class Partido extends javax.swing.JFrame {
 
         Bg_4.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 50, 130, 280));
 
+        Lista_delanteros.setBackground(new java.awt.Color(153, 153, 153));
         Lista_delanteros.setBorder(null);
+        Lista_delanteros.setForeground(new java.awt.Color(0, 0, 0));
         Lista_delanteros.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -92,6 +101,8 @@ public class Partido extends javax.swing.JFrame {
 
         Bg_4.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, 130, 280));
 
+        Lista_seleccionados.setBackground(new java.awt.Color(153, 153, 153));
+        Lista_seleccionados.setForeground(new java.awt.Color(0, 0, 0));
         Lista_seleccionados.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
@@ -109,28 +120,45 @@ public class Partido extends javax.swing.JFrame {
         jLabel3.setText("Seleccionados:");
         Bg_4.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, -1, -1));
 
-        BtnSeleccionados.setText("LIsto");
+        BtnSeleccionados.setBackground(new java.awt.Color(153, 153, 153));
+        BtnSeleccionados.setForeground(new java.awt.Color(0, 0, 0));
+        BtnSeleccionados.setText("Listo");
         BtnSeleccionados.setBorder(null);
+        BtnSeleccionados.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSeleccionadosActionPerformed(evt);
+            }
+        });
         Bg_4.add(BtnSeleccionados, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 350, 100, 40));
 
+        AñadirArquerosBtn.setBackground(new java.awt.Color(153, 153, 153));
+        AñadirArquerosBtn.setForeground(new java.awt.Color(0, 0, 0));
         AñadirArquerosBtn.setText("Añadir");
         AñadirArquerosBtn.setBorder(null);
         Bg_4.add(AñadirArquerosBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 350, 100, 40));
 
+        AñadirDefensasBts.setBackground(new java.awt.Color(153, 153, 153));
+        AñadirDefensasBts.setForeground(new java.awt.Color(0, 0, 0));
         AñadirDefensasBts.setText("Añadir");
         AñadirDefensasBts.setBorder(null);
         Bg_4.add(AñadirDefensasBts, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 350, 100, 40));
 
+        AñadirMedioBtn.setBackground(new java.awt.Color(153, 153, 153));
+        AñadirMedioBtn.setForeground(new java.awt.Color(0, 0, 0));
         AñadirMedioBtn.setText("Añadir");
         AñadirMedioBtn.setBorder(null);
         Bg_4.add(AñadirMedioBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 350, 100, 40));
 
+        AñadirDelanteroBtn.setBackground(new java.awt.Color(153, 153, 153));
+        AñadirDelanteroBtn.setForeground(new java.awt.Color(0, 0, 0));
         AñadirDelanteroBtn.setText("Añadir");
         AñadirDelanteroBtn.setBorder(null);
         Bg_4.add(AñadirDelanteroBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 350, 100, 40));
 
-        VolverDel2.setText("<");
-        Bg_4.add(VolverDel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 38, 32));
+        VolverPartido.setBackground(new java.awt.Color(153, 153, 153));
+        VolverPartido.setForeground(new java.awt.Color(0, 0, 0));
+        VolverPartido.setText("<");
+        Bg_4.add(VolverPartido, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 38, 32));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -145,6 +173,10 @@ public class Partido extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BtnSeleccionadosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSeleccionadosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnSeleccionadosActionPerformed
 
     public JList<String> getListPortero() {
         return LIsta_arqueros;
@@ -177,8 +209,9 @@ public class Partido extends javax.swing.JFrame {
         return AñadirMedioBtn;
     }
     public javax.swing.JButton getVolver_Boton() {
-        return VolverDel2;
+        return VolverPartido;
     }
+
 
 
 
@@ -195,7 +228,7 @@ public class Partido extends javax.swing.JFrame {
     public javax.swing.JList<String> Lista_defensas;
     public javax.swing.JList<String> Lista_delanteros;
     public javax.swing.JList<String> Lista_seleccionados;
-    public javax.swing.JButton VolverDel2;
+    public javax.swing.JButton VolverPartido;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 import miniproyecto.miniproyecto4.Jugadores.Portero;
@@ -39,10 +40,10 @@ public class Modelo{
         return model;
     }
 
-    private DefaultListModel agregarValor (miniproyecto.miniproyecto4.Jugadores.Jugador Jugador, JList<String> ListaJ) {
+    private DefaultListModel agregarValor (miniproyecto.miniproyecto4.Jugadores.Jugador jugador, JList<String> ListaJ) {
         DefaultListModel model = (DefaultListModel) ListaJ.getModel();
 
-        model.addElement(Jugador.MostrarInformacion());
+        model.addElement(jugador.MostrarInformacion());
 
         return model;
     }
@@ -121,12 +122,15 @@ public class Modelo{
         this.listDelanteros.clear();
     }
 
-    public void actualizarArquero (JTextField PorteroE, JTextField PorteroArr, JTextField PorteroVe, JTextField PorteroRe, JTextField PorteroAlt) {
-        if (PorteroE.getText().isEmpty() || PorteroArr.getText().isEmpty() || PorteroVe.getText().isEmpty() || PorteroRe.getText().isEmpty()|| PorteroAlt.getText().isEmpty()) return;
+    public void actualizarArquero (JTextField ArqueroE, JTextField ArqueroArr, JTextField ArqueroVe, JTextField ArqueroRe, JTextField ArqueroAlt) {
+        if (ArqueroE.getText().isEmpty() || ArqueroArr.getText().isEmpty() || ArqueroVe.getText().isEmpty() || ArqueroRe.getText().isEmpty()|| ArqueroAlt.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Todos los campos son obligatorios.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
 
-        Portero jugador = new Portero(PorteroE.getText(), Integer.parseInt(PorteroArr.getText()), Integer.parseInt(PorteroVe.getText()), Integer.parseInt(PorteroRe.getText()), PorteroAlt.getText());
-        Jugador.setNjugadores(Jugador.getNjugadores() - 1);
-        Jugador.setNjugadores(this.index + 1);
+        Portero jugador = new Portero( null , Integer.valueOf(ArqueroE.getText()), Integer.valueOf(ArqueroArr.getText()), Integer.valueOf(ArqueroVe.getText()), Integer.valueOf(ArqueroRe.getText()), Float.valueOf(ArqueroAlt.getText()));
+        jugador.setNjugadores(Jugador.getNjugadores() - 1);
+        jugador.setNjugadores(this.index + 1);
 
         if (!this.listPortero.isEmpty()) {
             for (int i = 0; i < this.listPortero.size(); i++) {
@@ -168,12 +172,12 @@ public class Modelo{
         }
     }
 
-    public void actualizarDefensa (JTextField DefensaE, JTextField DefensaArr, JTextField DefensaVe, JTextField DefensaRe, JTextField DefensaAlt) {
-        if (DefensaE.getText().isEmpty() || DefensaArr.getText().isEmpty() || DefensaVe.getText().isEmpty() || DefensaRe.getText().isEmpty()|| DefensaAlt.getText().isEmpty()) return;
+    public void actualizarDefensa (JTextField DefensaE, JTextField DefensaArr, JTextField DefensaVe, JTextField DefensaRe, JTextField DefensaAgi) {
+        if (DefensaE.getText().isEmpty() || DefensaArr.getText().isEmpty() || DefensaVe.getText().isEmpty() || DefensaRe.getText().isEmpty()|| DefensaAgi.getText().isEmpty()) return;
 
-        Defensa jugador = new Defensa(DefensaE.getText(), DefensaArr.getText(), DefensaVe.getText(), DefensaRe.getText(),DefensaAlt.getText());
-        Jugador.setNjugadores(Jugador.getNjugadores() - 1);
-        Jugador.setNjugadores(this.index + 1);
+        Defensa jugador = new Defensa(null, Integer.valueOf(DefensaE.getText()), Integer.valueOf(DefensaArr.getText()), Integer.valueOf(DefensaVe.getText()), Integer.valueOf(DefensaRe.getText()), Integer.valueOf(DefensaAgi.getText()));
+        jugador.setNjugadores(Jugador.getNjugadores() - 1);
+        jugador.setNjugadores(this.index + 1);
 
         if (!this.listPortero.isEmpty()) {
             for (int i = 0; i < this.listPortero.size(); i++) {
@@ -215,12 +219,12 @@ public class Modelo{
         }
     }
 
-    public void actualizarMediocampista (JTextField MediocampistaE, JTextField MediocampistaArr, JTextField MediocampistaVe, JTextField MediocampistaRe, JTextField MediocampistaAlt) {
-        if (MediocampistaE.getText().isEmpty() || MediocampistaArr.getText().isEmpty() || MediocampistaVe.getText().isEmpty() || MediocampistaRe.getText().isEmpty()|| MediocampistaAlt.getText().isEmpty()) return;
+    public void actualizarMediocampista (JTextField MedioE, JTextField MedioArr, JTextField MedioVe, JTextField MedioRe, JTextField MedioIQ) {
+        if (MedioE.getText().isEmpty() || MedioArr.getText().isEmpty() || MedioVe.getText().isEmpty() || MedioRe.getText().isEmpty()|| MedioIQ.getText().isEmpty()) return;
 
-        Mediocampista jugador = new Mediocampista(MediocampistaE.getText(), MediocampistaArr.getText(), MediocampistaVe.getText(), MediocampistaRe.getText(),MediocampistaAlt.getText());
-        Jugador.setNjugadores(Jugador.getNjugadores() - 1);
-        Jugador.setNjugadores(this.index + 1);
+        Mediocampista jugador = new Mediocampista(null, Integer.valueOf(MedioE.getText()), Integer.valueOf(MedioArr.getText()), Integer.valueOf(MedioVe.getText()), Integer.valueOf(MedioRe.getText()),Integer.valueOf(MedioIQ.getText()));
+        jugador.setNjugadores(Jugador.getNjugadores() - 1);
+        jugador.setNjugadores(this.index + 1);
 
         if (!this.listPortero.isEmpty()) {
             for (int i = 0; i < this.listPortero.size(); i++) {
@@ -265,9 +269,9 @@ public class Modelo{
     public void actualizarDelantero (JTextField DelanteroE, JTextField DelanteroArr, JTextField DelanteroVe, JTextField DelanteroRe, JTextField DelanteroAlt) {
         if (DelanteroE.getText().isEmpty() || DelanteroArr.getText().isEmpty() || DelanteroVe.getText().isEmpty() || DelanteroRe.getText().isEmpty()|| DelanteroAlt.getText().isEmpty()) return;
 
-        Delantero jugador = new Delantero(DelanteroE.getText(), DelanteroArr.getText(), DelanteroVe.getText(), DelanteroRe.getText(),DelanteroAlt.getText());
-        Jugador.setNjugadores(Jugador.getNjugadores() - 1);
-        Jugador.setNjugadores(this.index + 1);
+        Delantero jugador = new Delantero(null, Integer.valueOf(DelanteroE.getText()), Integer.valueOf(DelanteroArr.getText()), Integer.valueOf(DelanteroVe.getText()), Integer.valueOf(DelanteroRe.getText()), Integer.valueOf(DelanteroAlt.getText()));
+        jugador.setNjugadores(Jugador.getNjugadores() - 1);
+        jugador.setNjugadores(this.index + 1);
 
         if (!this.listPortero.isEmpty()) {
             for (int i = 0; i < this.listPortero.size(); i++) {
@@ -309,31 +313,31 @@ public class Modelo{
         }
     }
 
-    public void crearPortero (JTextField PorteroE, JTextField PorteroArr, JTextField PorteroVe, JTextField PorteroRe, JTextField PorteroAlt) {
-        if (PorteroE.getText().isEmpty() || PorteroArr.getText().isEmpty() || PorteroVe.getText().isEmpty() || PorteroRe.getText().isEmpty()|| PorteroAlt.getText().isEmpty()) return;
+    public void crearPortero(JTextField ArqueroN,JTextField ArqueroE, JTextField ArqueroArr, JTextField ArqueroVe, JTextField ArqueroRe, JTextField ArqueroAlt) {
+        if (ArqueroN.getText().isEmpty() || ArqueroE.getText().isEmpty() || ArqueroArr.getText().isEmpty() || ArqueroVe.getText().isEmpty() || ArqueroRe.getText().isEmpty()|| ArqueroAlt.getText().isEmpty()) return;
 
-        Portero jugador = new Portero(PorteroE.getText(), PorteroArr.getText(), PorteroVe.getText(), PorteroRe.getText(),PorteroAlt.getText());
+        Portero jugador = new Portero(ArqueroN.getText(), Integer.valueOf(ArqueroE.getText()), Integer.valueOf(ArqueroArr.getText()), Integer.valueOf(ArqueroVe.getText()), Integer.valueOf(ArqueroRe.getText()),Float.valueOf(ArqueroAlt.getText()));
         this.listPortero.add(jugador);
     }
 
-    public void crearDefensa (JTextField DefensaE, JTextField DefensaArr, JTextField DefensaVe, JTextField DefensaRe, JTextField DefensaAlt) {
-        if (DefensaE.getText().isEmpty() || DefensaArr.getText().isEmpty() || DefensaVe.getText().isEmpty() || DefensaRe.getText().isEmpty()|| DefensaAlt.getText().isEmpty()) return;
+    public void crearDefensa(JTextField DefensaNom, JTextField DefensaE, JTextField DefensaArr, JTextField DefensaVe, JTextField DefensaRe, JTextField DefensaAgi) {
+        if (DefensaNom.getText().isEmpty() || DefensaE.getText().isEmpty() || DefensaArr.getText().isEmpty() || DefensaVe.getText().isEmpty() || DefensaRe.getText().isEmpty()|| DefensaAgi.getText().isEmpty()) return;
 
-        Defensa jugador = new Defensa(DefensaE.getText(), DefensaArr.getText(), DefensaVe.getText(), DefensaRe.getText(),DefensaAlt.getText());
+        Defensa jugador = new Defensa(DefensaNom.getText(), Integer.valueOf(DefensaE.getText()), Integer.valueOf(DefensaArr.getText()), Integer.valueOf(DefensaVe.getText()), Integer.valueOf(DefensaRe.getText()),Integer.valueOf(DefensaAgi.getText()));
         this.listDefensas.add(jugador);
     }
 
-    public void crearMediocampista (JTextField MediocampistaE, JTextField MediocampistaArr, JTextField MediocampistaVe, JTextField MediocampistaRe, JTextField MediocampistaAlt) {
-        if (MediocampistaE.getText().isEmpty() || MediocampistaArr.getText().isEmpty() || MediocampistaVe.getText().isEmpty() || MediocampistaRe.getText().isEmpty()|| MediocampistaAlt.getText().isEmpty()) return;
+    public void crearMediocampista(JTextField MedioNom, JTextField MedioE, JTextField MedioArr, JTextField MedioVe, JTextField MedioRe, JTextField MedioIQ) {
+        if (MedioNom.getText().isEmpty() || MedioE.getText().isEmpty() || MedioArr.getText().isEmpty() || MedioVe.getText().isEmpty() || MedioRe.getText().isEmpty()|| MedioIQ.getText().isEmpty()) return;
 
-        Mediocampista jugador = new Mediocampista(MediocampistaE.getText(), MediocampistaArr.getText(), MediocampistaVe.getText(), MediocampistaRe.getText(),MediocampistaAlt.getText());
+        Mediocampista jugador = new Mediocampista(MedioNom.getText(), Integer.valueOf(MedioE.getText()), Integer.valueOf(MedioArr.getText()), Integer.valueOf(MedioVe.getText()), Integer.valueOf(MedioRe.getText()),Integer.valueOf(MedioIQ.getText()));
         this.listMediocampistas.add(jugador);
     }
 
-    public void crearDelantero (JTextField DelanteroE, JTextField DelanteroArr, JTextField DelanteroVe, JTextField DelanteroRe, JTextField DelanteroAlt) {
-        if (DelanteroE.getText().isEmpty() || DelanteroArr.getText().isEmpty() || DelanteroVe.getText().isEmpty() || DelanteroRe.getText().isEmpty()|| DelanteroAlt.getText().isEmpty()) return;
+    public void crearDelantero(JTextField DelanteroNom, JTextField DelanteroE, JTextField DelanteroArr, JTextField DelanteroVe, JTextField DelanteroRe, JTextField DelanteroPre) {
+        if (DelanteroNom.getText().isEmpty() || DelanteroE.getText().isEmpty() || DelanteroArr.getText().isEmpty() || DelanteroVe.getText().isEmpty() || DelanteroRe.getText().isEmpty()|| DelanteroPre.getText().isEmpty()) return;
 
-        Delantero jugador = new Delantero(DelanteroE.getText(), DelanteroArr.getText(), DelanteroVe.getText(), DelanteroRe.getText(),DelanteroAlt.getText());
+        Delantero jugador = new Delantero(DelanteroNom.getText(), Integer.valueOf(DelanteroE.getText()), Integer.valueOf(DelanteroArr.getText()), Integer.valueOf(DelanteroVe.getText()), Integer.valueOf(DelanteroRe.getText()),Integer.valueOf(DelanteroPre.getText()));
         this.listDelanteros.add(jugador);
     }
 

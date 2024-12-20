@@ -68,9 +68,14 @@ public class Actualizar extends javax.swing.JFrame {
 
         Bg_3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        Create_Players.setBackground(new java.awt.Color(153, 153, 153));
+        Create_Players.setForeground(new java.awt.Color(0, 0, 0));
+
+        Arquero.setBackground(new java.awt.Color(51, 51, 51));
         Arquero.setPreferredSize(new java.awt.Dimension(700, 450));
 
-        ArqueroE.setForeground(new java.awt.Color(255, 255, 255));
+        ArqueroE.setBackground(new java.awt.Color(153, 153, 153));
+        ArqueroE.setForeground(new java.awt.Color(0, 0, 0));
         ArqueroE.setText("Edad");
         ArqueroE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +83,8 @@ public class Actualizar extends javax.swing.JFrame {
             }
         });
 
-        ArqueroArr.setForeground(new java.awt.Color(255, 255, 255));
+        ArqueroArr.setBackground(new java.awt.Color(153, 153, 153));
+        ArqueroArr.setForeground(new java.awt.Color(0, 0, 0));
         ArqueroArr.setText("Arranque");
         ArqueroArr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +92,8 @@ public class Actualizar extends javax.swing.JFrame {
             }
         });
 
-        ArqueroVe.setForeground(new java.awt.Color(255, 255, 255));
+        ArqueroVe.setBackground(new java.awt.Color(153, 153, 153));
+        ArqueroVe.setForeground(new java.awt.Color(0, 0, 0));
         ArqueroVe.setText("Velocidad");
         ArqueroVe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,14 +101,21 @@ public class Actualizar extends javax.swing.JFrame {
             }
         });
 
-        ArqueroRe.setForeground(new java.awt.Color(255, 255, 255));
+        ArqueroRe.setBackground(new java.awt.Color(153, 153, 153));
+        ArqueroRe.setForeground(new java.awt.Color(0, 0, 0));
         ArqueroRe.setText("Resistencia");
 
+        ArqueroAlt.setBackground(new java.awt.Color(153, 153, 153));
+        ArqueroAlt.setForeground(new java.awt.Color(0, 0, 0));
         ArqueroAlt.setText("Altura");
 
+        ActualizarArqueroBtn.setBackground(new java.awt.Color(153, 153, 153));
+        ActualizarArqueroBtn.setForeground(new java.awt.Color(0, 0, 0));
         ActualizarArqueroBtn.setText("Actualizar");
         ActualizarArqueroBtn.setBorder(null);
 
+        VolverAr2.setBackground(new java.awt.Color(153, 153, 153));
+        VolverAr2.setForeground(new java.awt.Color(0, 0, 0));
         VolverAr2.setText("<");
 
         javax.swing.GroupLayout ArqueroLayout = new javax.swing.GroupLayout(Arquero);
@@ -152,39 +166,51 @@ public class Actualizar extends javax.swing.JFrame {
 
         Create_Players.addTab("Arquero", Arquero);
 
-        DefensaE.setForeground(new java.awt.Color(255, 255, 255));
+        Defensa.setBackground(new java.awt.Color(51, 51, 51));
+
+        DefensaE.setBackground(new java.awt.Color(153, 153, 153));
+        DefensaE.setForeground(new java.awt.Color(0, 0, 0));
         DefensaE.setText("Edad");
         DefensaE.setToolTipText("");
         DefensaE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                DefensaEActionPerformed(evt);
             }
         });
 
-        DefensaArr.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaArr.setBackground(new java.awt.Color(153, 153, 153));
+        DefensaArr.setForeground(new java.awt.Color(0, 0, 0));
         DefensaArr.setText("Arranque");
         DefensaArr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                DefensaArrActionPerformed(evt);
             }
         });
 
-        DefensaVe.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaVe.setBackground(new java.awt.Color(153, 153, 153));
+        DefensaVe.setForeground(new java.awt.Color(0, 0, 0));
         DefensaVe.setText("Velocidad");
         DefensaVe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                DefensaVeActionPerformed(evt);
             }
         });
 
-        DefensaRe.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaRe.setBackground(new java.awt.Color(153, 153, 153));
+        DefensaRe.setForeground(new java.awt.Color(0, 0, 0));
         DefensaRe.setText("Resistencia");
 
+        DefensaAgi.setBackground(new java.awt.Color(153, 153, 153));
+        DefensaAgi.setForeground(new java.awt.Color(0, 0, 0));
         DefensaAgi.setText("Agilidad");
 
+        ActualizarDefensaBtn.setBackground(new java.awt.Color(153, 153, 153));
+        ActualizarDefensaBtn.setForeground(new java.awt.Color(0, 0, 0));
         ActualizarDefensaBtn.setText("Actualizar");
         ActualizarDefensaBtn.setBorder(null);
 
+        VolverDef2.setBackground(new java.awt.Color(153, 153, 153));
+        VolverDef2.setForeground(new java.awt.Color(0, 0, 0));
         VolverDef2.setText("<");
 
         javax.swing.GroupLayout DefensaLayout = new javax.swing.GroupLayout(Defensa);
@@ -233,38 +259,50 @@ public class Actualizar extends javax.swing.JFrame {
 
         Create_Players.addTab("Defensa", Defensa);
 
-        MedioE.setForeground(new java.awt.Color(255, 255, 255));
+        Medio.setBackground(new java.awt.Color(51, 51, 51));
+
+        MedioE.setBackground(new java.awt.Color(153, 153, 153));
+        MedioE.setForeground(new java.awt.Color(0, 0, 0));
         MedioE.setText("Edad");
         MedioE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                MedioEActionPerformed(evt);
             }
         });
 
-        MedioArr.setForeground(new java.awt.Color(255, 255, 255));
+        MedioArr.setBackground(new java.awt.Color(153, 153, 153));
+        MedioArr.setForeground(new java.awt.Color(0, 0, 0));
         MedioArr.setText("Arranque");
         MedioArr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                MedioArrActionPerformed(evt);
             }
         });
 
-        MedioVe.setForeground(new java.awt.Color(255, 255, 255));
+        MedioVe.setBackground(new java.awt.Color(153, 153, 153));
+        MedioVe.setForeground(new java.awt.Color(0, 0, 0));
         MedioVe.setText("Velocidad");
         MedioVe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                MedioVeActionPerformed(evt);
             }
         });
 
-        MedioRe.setForeground(new java.awt.Color(255, 255, 255));
+        MedioRe.setBackground(new java.awt.Color(153, 153, 153));
+        MedioRe.setForeground(new java.awt.Color(0, 0, 0));
         MedioRe.setText("Resistencia");
 
+        MedioIQ.setBackground(new java.awt.Color(153, 153, 153));
+        MedioIQ.setForeground(new java.awt.Color(0, 0, 0));
         MedioIQ.setText("IQ");
 
+        ActualizarMedioBtn.setBackground(new java.awt.Color(153, 153, 153));
+        ActualizarMedioBtn.setForeground(new java.awt.Color(0, 0, 0));
         ActualizarMedioBtn.setText("Actualizar");
         ActualizarMedioBtn.setBorder(null);
 
+        VolverMed2.setBackground(new java.awt.Color(153, 153, 153));
+        VolverMed2.setForeground(new java.awt.Color(0, 0, 0));
         VolverMed2.setText("<");
 
         javax.swing.GroupLayout MedioLayout = new javax.swing.GroupLayout(Medio);
@@ -315,15 +353,19 @@ public class Actualizar extends javax.swing.JFrame {
 
         Create_Players.addTab("Medio", Medio);
 
-        DelanteroE.setForeground(new java.awt.Color(255, 255, 255));
+        Delantero.setBackground(new java.awt.Color(51, 51, 51));
+
+        DelanteroE.setBackground(new java.awt.Color(153, 153, 153));
+        DelanteroE.setForeground(new java.awt.Color(0, 0, 0));
         DelanteroE.setText("Edad");
         DelanteroE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                actionPerformed(evt);
+                DelanteroEdadActionPerformed(evt);
             }
         });
 
-        DelanteroArr.setForeground(new java.awt.Color(255, 255, 255));
+        DelanteroArr.setBackground(new java.awt.Color(153, 153, 153));
+        DelanteroArr.setForeground(new java.awt.Color(0, 0, 0));
         DelanteroArr.setText("Arranque");
         DelanteroArr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -331,7 +373,8 @@ public class Actualizar extends javax.swing.JFrame {
             }
         });
 
-        DelanteroVe.setForeground(new java.awt.Color(255, 255, 255));
+        DelanteroVe.setBackground(new java.awt.Color(153, 153, 153));
+        DelanteroVe.setForeground(new java.awt.Color(0, 0, 0));
         DelanteroVe.setText("Velocidad");
         DelanteroVe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -339,14 +382,21 @@ public class Actualizar extends javax.swing.JFrame {
             }
         });
 
-        DelanteroRe.setForeground(new java.awt.Color(255, 255, 255));
+        DelanteroRe.setBackground(new java.awt.Color(153, 153, 153));
+        DelanteroRe.setForeground(new java.awt.Color(0, 0, 0));
         DelanteroRe.setText("Resistencia");
 
+        DelanteroPre.setBackground(new java.awt.Color(153, 153, 153));
+        DelanteroPre.setForeground(new java.awt.Color(0, 0, 0));
         DelanteroPre.setText("Precision");
 
+        ActualizarDelanteroBtn.setBackground(new java.awt.Color(153, 153, 153));
+        ActualizarDelanteroBtn.setForeground(new java.awt.Color(0, 0, 0));
         ActualizarDelanteroBtn.setText("Actualizar");
         ActualizarDelanteroBtn.setBorder(null);
 
+        VolverDel2.setBackground(new java.awt.Color(153, 153, 153));
+        VolverDel2.setForeground(new java.awt.Color(0, 0, 0));
         VolverDel2.setText("<");
 
         javax.swing.GroupLayout DelanteroLayout = new javax.swing.GroupLayout(Delantero);
@@ -422,6 +472,30 @@ public class Actualizar extends javax.swing.JFrame {
     private void ArqueroVeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArqueroVeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ArqueroVeActionPerformed
+
+    private void MedioVeActionPerformed(java.awt.event.ActionEvent evt) {
+            // TODO add your handling code here:
+        }
+
+    private void DefensaArrActionPerformed(java.awt.event.ActionEvent evt) {
+            // TODO add your handling code here:
+        }
+
+    private void DefensaEActionPerformed(java.awt.event.ActionEvent evt) {
+            // TODO add your handling code here:
+        }
+
+    private void DefensaVeActionPerformed(java.awt.event.ActionEvent evt) {
+            // TODO add your handling code here:
+        }
+
+    private void MedioEActionPerformed(java.awt.event.ActionEvent evt) {
+            // TODO add your handling code here:
+        }
+    
+    private void MedioArrActionPerformed(java.awt.event.ActionEvent evt) {
+            // TODO add your handling code here:
+        }
 
     private void ArqueroE1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ArqueroE1ActionPerformed
         // TODO add your handling code here:
