@@ -229,13 +229,13 @@
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="ArqueroE1" min="-2" pref="300" max="-2" attributes="0"/>
-                                      <Component id="ArqueroArr1" min="-2" pref="300" max="-2" attributes="0"/>
-                                      <Component id="ArqueroVe1" alignment="1" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <Component id="DefensaE" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <Component id="DefensaArr" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <Component id="DefensaVe" alignment="1" min="-2" pref="300" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="ArqueroRe1" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <Component id="DefensaRe" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
                                       <Component id="DefensaAgi" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace pref="28" max="32767" attributes="0"/>
@@ -254,16 +254,16 @@
                           <Component id="VolverDef2" min="-2" pref="32" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="ArqueroRe1" min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="ArqueroE1" max="32767" attributes="0"/>
+                              <Component id="DefensaRe" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="DefensaE" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="DefensaAgi" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="ArqueroArr1" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="DefensaArr" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="ArqueroVe1" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="DefensaVe" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           <Component id="ActualizarDefensaBtn" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace pref="38" max="32767" attributes="0"/>
@@ -272,7 +272,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JTextField" name="ArqueroE1">
+                <Component class="javax.swing.JTextField" name="DefensaE">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -281,13 +281,13 @@
                     <Property name="toolTipText" type="java.lang.String" value=""/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ArqueroE1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DefensaEActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroArr1">
+                <Component class="javax.swing.JTextField" name="DefensaArr">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -295,13 +295,13 @@
                     <Property name="text" type="java.lang.String" value="Arranque"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ArqueroArr1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DefensaArrActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroVe1">
+                <Component class="javax.swing.JTextField" name="DefensaVe">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -309,13 +309,13 @@
                     <Property name="text" type="java.lang.String" value="Velocidad"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ArqueroVe1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DefensaVeActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroRe1">
+                <Component class="javax.swing.JTextField" name="DefensaRe">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -374,16 +374,16 @@
                                   <Group type="103" groupAlignment="0" attributes="0">
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="ArqueroE2" min="-2" pref="300" max="-2" attributes="0"/>
-                                              <Component id="ArqueroArr2" min="-2" pref="300" max="-2" attributes="0"/>
+                                              <Component id="MedioE" min="-2" pref="300" max="-2" attributes="0"/>
+                                              <Component id="MedioArr" min="-2" pref="300" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="ArqueroRe2" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
-                                              <Component id="ArqueroAlt2" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                                              <Component id="MedioRe" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                                              <Component id="MedioIQ" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
                                           </Group>
                                       </Group>
-                                      <Component id="ArqueroVe2" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <Component id="MedioVe" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace pref="28" max="32767" attributes="0"/>
                               </Group>
@@ -406,16 +406,16 @@
                           <Component id="VolverMed2" min="-2" pref="32" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="ArqueroRe2" min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="ArqueroE2" max="32767" attributes="0"/>
+                              <Component id="MedioRe" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="MedioE" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="ArqueroAlt2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="ArqueroArr2" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="MedioIQ" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="MedioArr" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-                          <Component id="ArqueroVe2" min="-2" pref="50" max="-2" attributes="0"/>
+                          <Component id="MedioVe" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Component id="ActualizarMedioBtn" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
@@ -424,7 +424,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JTextField" name="ArqueroE2">
+                <Component class="javax.swing.JTextField" name="MedioE">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -432,13 +432,13 @@
                     <Property name="text" type="java.lang.String" value="Edad"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ArqueroE2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MedioEActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroArr2">
+                <Component class="javax.swing.JTextField" name="MedioArr">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -446,13 +446,13 @@
                     <Property name="text" type="java.lang.String" value="Arranque"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ArqueroArr2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MedioArrActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroVe2">
+                <Component class="javax.swing.JTextField" name="MedioVe">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -460,13 +460,13 @@
                     <Property name="text" type="java.lang.String" value="Velocidad"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ArqueroVe2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MedioVeActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroRe2">
+                <Component class="javax.swing.JTextField" name="MedioRe">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -477,7 +477,7 @@
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
                   </AuxValues>
                 </Component>
-                <Component class="javax.swing.JTextField" name="ArqueroAlt2">
+                <Component class="javax.swing.JTextField" name="MedioIQ">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="IQ"/>
                   </Properties>
@@ -523,7 +523,7 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="DelanteroEdad" min="-2" pref="300" max="-2" attributes="0"/>
+                                      <Component id="DelanteroE" min="-2" pref="300" max="-2" attributes="0"/>
                                       <Component id="DelanteroArr" min="-2" pref="300" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
@@ -554,7 +554,7 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Component id="DelanteroRe" min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="DelanteroEdad" max="32767" attributes="0"/>
+                              <Component id="DelanteroE" max="32767" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -571,7 +571,7 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JTextField" name="DelanteroEdad">
+                <Component class="javax.swing.JTextField" name="DelanteroE">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -579,7 +579,7 @@
                     <Property name="text" type="java.lang.String" value="Edad"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DelanteroEdadActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DelanteroEActionPerformed"/>
                   </Events>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>

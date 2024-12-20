@@ -4,6 +4,9 @@
  */
 package miniproyecto.GUI;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author user
@@ -37,23 +40,23 @@ public class Actualizar extends javax.swing.JFrame {
         ActualizarArqueroBtn = new javax.swing.JButton();
         VolverAr2 = new javax.swing.JButton();
         Defensa = new javax.swing.JPanel();
-        ArqueroE1 = new javax.swing.JTextField();
-        ArqueroArr1 = new javax.swing.JTextField();
-        ArqueroVe1 = new javax.swing.JTextField();
-        ArqueroRe1 = new javax.swing.JTextField();
+        DefensaE = new javax.swing.JTextField();
+        DefensaArr = new javax.swing.JTextField();
+        DefensaVe = new javax.swing.JTextField();
+        DefensaRe = new javax.swing.JTextField();
         DefensaAgi = new javax.swing.JTextField();
         ActualizarDefensaBtn = new javax.swing.JButton();
         VolverDef2 = new javax.swing.JButton();
         Medio = new javax.swing.JPanel();
-        ArqueroE2 = new javax.swing.JTextField();
-        ArqueroArr2 = new javax.swing.JTextField();
-        ArqueroVe2 = new javax.swing.JTextField();
-        ArqueroRe2 = new javax.swing.JTextField();
-        ArqueroAlt2 = new javax.swing.JTextField();
+        MedioE = new javax.swing.JTextField();
+        MedioArr = new javax.swing.JTextField();
+        MedioVe = new javax.swing.JTextField();
+        MedioRe = new javax.swing.JTextField();
+        MedioIQ = new javax.swing.JTextField();
         ActualizarMedioBtn = new javax.swing.JButton();
         VolverMed2 = new javax.swing.JButton();
         Delantero = new javax.swing.JPanel();
-        DelanteroEdad = new javax.swing.JTextField();
+        DelanteroE = new javax.swing.JTextField();
         DelanteroArr = new javax.swing.JTextField();
         DelanteroVe = new javax.swing.JTextField();
         DelanteroRe = new javax.swing.JTextField();
@@ -149,33 +152,33 @@ public class Actualizar extends javax.swing.JFrame {
 
         Create_Players.addTab("Arquero", Arquero);
 
-        ArqueroE1.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroE1.setText("Edad");
-        ArqueroE1.setToolTipText("");
-        ArqueroE1.addActionListener(new java.awt.event.ActionListener() {
+        DefensaE.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaE.setText("Edad");
+        DefensaE.setToolTipText("");
+        DefensaE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ArqueroE1ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
-        ArqueroArr1.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroArr1.setText("Arranque");
-        ArqueroArr1.addActionListener(new java.awt.event.ActionListener() {
+        DefensaArr.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaArr.setText("Arranque");
+        DefensaArr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ArqueroArr1ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
-        ArqueroVe1.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroVe1.setText("Velocidad");
-        ArqueroVe1.addActionListener(new java.awt.event.ActionListener() {
+        DefensaVe.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaVe.setText("Velocidad");
+        DefensaVe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ArqueroVe1ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
-        ArqueroRe1.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroRe1.setText("Resistencia");
+        DefensaRe.setForeground(new java.awt.Color(255, 255, 255));
+        DefensaRe.setText("Resistencia");
 
         DefensaAgi.setText("Agilidad");
 
@@ -197,12 +200,12 @@ public class Actualizar extends javax.swing.JFrame {
                         .addGap(93, 93, 93))
                     .addGroup(DefensaLayout.createSequentialGroup()
                         .addGroup(DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(ArqueroE1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ArqueroArr1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ArqueroVe1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(DefensaE, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DefensaArr, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DefensaVe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addGroup(DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ArqueroRe1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DefensaRe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DefensaAgi, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(28, Short.MAX_VALUE))))
             .addGroup(DefensaLayout.createSequentialGroup()
@@ -215,14 +218,14 @@ public class Actualizar extends javax.swing.JFrame {
                 .addComponent(VolverDef2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ArqueroRe1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ArqueroE1))
+                    .addComponent(DefensaRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DefensaE))
                 .addGap(30, 30, 30)
                 .addGroup(DefensaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DefensaAgi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ArqueroArr1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(DefensaArr, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
-                .addComponent(ArqueroVe1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(DefensaVe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
                 .addComponent(ActualizarDefensaBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(38, Short.MAX_VALUE))
@@ -230,34 +233,34 @@ public class Actualizar extends javax.swing.JFrame {
 
         Create_Players.addTab("Defensa", Defensa);
 
-        ArqueroE2.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroE2.setText("Edad");
-        ArqueroE2.addActionListener(new java.awt.event.ActionListener() {
+        MedioE.setForeground(new java.awt.Color(255, 255, 255));
+        MedioE.setText("Edad");
+        MedioE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ArqueroE2ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
-        ArqueroArr2.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroArr2.setText("Arranque");
-        ArqueroArr2.addActionListener(new java.awt.event.ActionListener() {
+        MedioArr.setForeground(new java.awt.Color(255, 255, 255));
+        MedioArr.setText("Arranque");
+        MedioArr.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ArqueroArr2ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
-        ArqueroVe2.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroVe2.setText("Velocidad");
-        ArqueroVe2.addActionListener(new java.awt.event.ActionListener() {
+        MedioVe.setForeground(new java.awt.Color(255, 255, 255));
+        MedioVe.setText("Velocidad");
+        MedioVe.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ArqueroVe2ActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
-        ArqueroRe2.setForeground(new java.awt.Color(255, 255, 255));
-        ArqueroRe2.setText("Resistencia");
+        MedioRe.setForeground(new java.awt.Color(255, 255, 255));
+        MedioRe.setText("Resistencia");
 
-        ArqueroAlt2.setText("IQ");
+        MedioIQ.setText("IQ");
 
         ActualizarMedioBtn.setText("Actualizar");
         ActualizarMedioBtn.setBorder(null);
@@ -275,13 +278,13 @@ public class Actualizar extends javax.swing.JFrame {
                         .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(MedioLayout.createSequentialGroup()
                                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ArqueroE2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ArqueroArr2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(MedioE, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MedioArr, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(42, 42, 42)
                                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ArqueroRe2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(ArqueroAlt2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(ArqueroVe2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(MedioRe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(MedioIQ, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(MedioVe, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(28, Short.MAX_VALUE))
                     .addGroup(MedioLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -297,14 +300,14 @@ public class Actualizar extends javax.swing.JFrame {
                 .addComponent(VolverMed2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ArqueroRe2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ArqueroE2))
+                    .addComponent(MedioRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MedioE))
                 .addGap(30, 30, 30)
                 .addGroup(MedioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ArqueroAlt2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ArqueroArr2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(MedioIQ, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MedioArr, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
-                .addComponent(ArqueroVe2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(MedioVe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(30, 30, 30)
                 .addComponent(ActualizarMedioBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38))
@@ -312,11 +315,11 @@ public class Actualizar extends javax.swing.JFrame {
 
         Create_Players.addTab("Medio", Medio);
 
-        DelanteroEdad.setForeground(new java.awt.Color(255, 255, 255));
-        DelanteroEdad.setText("Edad");
-        DelanteroEdad.addActionListener(new java.awt.event.ActionListener() {
+        DelanteroE.setForeground(new java.awt.Color(255, 255, 255));
+        DelanteroE.setText("Edad");
+        DelanteroE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DelanteroEdadActionPerformed(evt);
+                actionPerformed(evt);
             }
         });
 
@@ -355,7 +358,7 @@ public class Actualizar extends javax.swing.JFrame {
                 .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DelanteroLayout.createSequentialGroup()
                         .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(DelanteroEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DelanteroE, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(DelanteroArr, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(42, 42, 42)
                         .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -378,7 +381,7 @@ public class Actualizar extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(DelanteroRe, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(DelanteroEdad))
+                    .addComponent(DelanteroE))
                 .addGap(30, 30, 30)
                 .addGroup(DelanteroLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(DelanteroPre, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -456,6 +459,92 @@ public class Actualizar extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_DelanteroVeActionPerformed
 
+    public void getActualizarArqueroBtn(java.awt.event.ActionListener evt) {
+        ActualizarArqueroBtn.addActionListener(evt);
+    }
+    public void getActualizarDefensaBtn(java.awt.event.ActionListener evt) {
+        ActualizarDefensaBtn.addActionListener(evt);
+    }
+    public void getActualizarMedioBtn(java.awt.event.ActionListener evt) {
+        ActualizarMedioBtn.addActionListener(evt);
+    }
+    public void getActualizarDelanteroBtn(java.awt.event.ActionListener evt) {
+        ActualizarDelanteroBtn.addActionListener(evt);
+    }
+    public JButton getVolverAr2() {
+        return VolverAr2;
+    }
+    public JButton getVolverDef2() {
+        return VolverDef2;
+    }
+    public JButton getVolverMed2() {
+        return VolverMed2;
+    }
+    public JButton getVolverDel2() {
+        return VolverDel2;
+    }
+        public JTextField getEdadArquero() {
+        return ArqueroE;
+        }
+        public JTextField getArranqueArquero() {
+        return ArqueroArr;
+        }
+        public JTextField getVelocidadArquero() {
+        return ArqueroVe;
+        }
+        public JTextField getResistenciaArquero() {
+        return ArqueroRe;
+        }
+        public JTextField getAlturaArquero() {
+        return ArqueroAlt;
+        }
+        public JTextField getEdadDefensa() {
+        return DefensaE;
+        }
+        public JTextField getArranqueDefensa() {
+        return DefensaArr;
+        }
+        public JTextField getVelocidadDefensa() {
+        return DefensaVe;
+        }
+        public JTextField getResistenciaDefensa() {
+        return DefensaRe;
+        }
+        public JTextField getAgilidadDefensa() {
+        return DefensaAgi;
+        }
+        public JTextField getEdadMedio() {
+        return MedioE;
+        }
+        public JTextField getArranqueMedio() {
+        return MedioArr;
+        }
+        public JTextField getVelocidadMedio() {
+        return DefensaVe;
+        }
+        public JTextField getResistenciaMedio() {
+        return MedioRe;
+        }
+        public JTextField getIQMedio() {
+        return MedioIQ;
+        }
+        public JTextField getEdadDelantero() {
+        return DelanteroE;
+        }
+        public JTextField getArranqueDelantero() {
+        return DelanteroArr;
+        }
+        public JTextField getVelocidadDelantero() {
+        return DelanteroVe;
+        }
+        public JTextField getResistenciaDelantero() {
+        return DelanteroRe;
+        }
+        public JTextField getPrecisionDelantero() {
+        return DelanteroPre;
+        }
+
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton ActualizarArqueroBtn;
@@ -464,30 +553,30 @@ public class Actualizar extends javax.swing.JFrame {
     public javax.swing.JButton ActualizarMedioBtn;
     private javax.swing.JPanel Arquero;
     public javax.swing.JTextField ArqueroAlt;
-    public javax.swing.JTextField ArqueroAlt2;
     public javax.swing.JTextField ArqueroArr;
-    public javax.swing.JTextField ArqueroArr1;
-    public javax.swing.JTextField ArqueroArr2;
     public javax.swing.JTextField ArqueroE;
-    public javax.swing.JTextField ArqueroE1;
-    public javax.swing.JTextField ArqueroE2;
     public javax.swing.JTextField ArqueroRe;
-    public javax.swing.JTextField ArqueroRe1;
-    public javax.swing.JTextField ArqueroRe2;
     public javax.swing.JTextField ArqueroVe;
-    public javax.swing.JTextField ArqueroVe1;
-    public javax.swing.JTextField ArqueroVe2;
     private javax.swing.JPanel Bg_3;
     public javax.swing.JTabbedPane Create_Players;
     private javax.swing.JPanel Defensa;
     public javax.swing.JTextField DefensaAgi;
+    public javax.swing.JTextField DefensaArr;
+    public javax.swing.JTextField DefensaE;
+    public javax.swing.JTextField DefensaRe;
+    public javax.swing.JTextField DefensaVe;
     private javax.swing.JPanel Delantero;
     public javax.swing.JTextField DelanteroArr;
-    public javax.swing.JTextField DelanteroEdad;
+    public javax.swing.JTextField DelanteroE;
     public javax.swing.JTextField DelanteroPre;
     public javax.swing.JTextField DelanteroRe;
     public javax.swing.JTextField DelanteroVe;
     private javax.swing.JPanel Medio;
+    public javax.swing.JTextField MedioArr;
+    public javax.swing.JTextField MedioE;
+    public javax.swing.JTextField MedioIQ;
+    public javax.swing.JTextField MedioRe;
+    public javax.swing.JTextField MedioVe;
     public javax.swing.JButton VolverAr2;
     public javax.swing.JButton VolverDef2;
     public javax.swing.JButton VolverDel2;
