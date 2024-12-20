@@ -80,69 +80,102 @@ public class Controlador {
 				modelo.leerLista(vista.menu.getLista_jugadores());
             }
         });
-
+        this.vista.actualizar.getVolverAr2().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vista.menuA();
+                modelo.leerLista(vista.menu.getLista_jugadores());
+            }
+        });
+        this.vista.actualizar.getVolverDef2().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vista.menuA();
+                modelo.leerLista(vista.menu.getLista_jugadores());
+            }
+        });
+        this.vista.actualizar.getVolverMed2().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vista.menuA();
+                modelo.leerLista(vista.menu.getLista_jugadores());
+            }
+        });
+        this.vista.actualizar.getVolverDel2().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vista.menuA();
+                modelo.leerLista(vista.menu.getLista_jugadores());
+            }
+        });
+        this.vista.partido.getVolver_Boton().addMouseListener(new java.awt.event.MouseAdapter() {
+            @Override
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                vista.menuPAR();
+            }
+        });
 
         this.vista.crear.getGuardarArquero().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
-                modelo.crearPortero(vista.crear.getNombreArquero(), vista.crear.getEdadArquero(), vista.crear.getVelocidadArquero(), vista.crear.getResistenciaArquero(), vista.crear.getAlturaArquero());
+                modelo.crearPortero(vista.crear.getNombreArquero(), vista.crear.getEdadArquero(), vista.crear.getArranqueArquero(), vista.crear.getVelocidadArquero(), vista.crear.getResistenciaArquero(), vista.crear.getAlturaArquero());
             }
         });
 
         this.vista.crear.getGuardarDefensa().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
-                modelo.crearDefensa(vista.crear.getNombreDefensa(), vista.crear.getEdadDefensa(), vista.crear.getArranqueDefensa(), vista.crear.getVelocidadDefensa(), vista.crear.getResistenciaDefensa());
+                modelo.crearDefensa(vista.crear.getNombreDefensa(), vista.crear.getEdadDefensa(), vista.crear.getArranqueDefensa(), vista.crear.getVelocidadDefensa(), vista.crear.getResistenciaDefensa(), vista.crear.getAgilidadDefensa());
             }
         });
 
         this.vista.crear.getGuardarMedio().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
-                modelo.crearMediocampista(vista.crear.getNombreMedio(), vista.crear.getEdadMedio(), vista.crear.getArranqueMedio(), vista.crear.getVelocidadMedio(), vista.crear.getResistenciaMedio());
+                modelo.crearMediocampista(vista.crear.getNombreMedio(), vista.crear.getEdadMedio(), vista.crear.getArranqueMedio(), vista.crear.getVelocidadMedio(), vista.crear.getResistenciaMedio(), vista.crear.getIQMedio());
             }
         });
 
         this.vista.crear.getGuardarDelantero().addMouseListener(new java.awt.event.MouseAdapter() {
             @Override
 			public void mouseClicked(java.awt.event.MouseEvent evt) {
-                modelo.crearDelantero(vista.crear.getNombreDelantero(), vista.crear.getEdadDelantero(), vista.crear.getArranqueDelantero(), vista.crear.getVelocidadDelantero(), vista.crear.getResistenciaDelantero());
+                modelo.crearDelantero(vista.crear.getNombreDelantero(), vista.crear.getEdadDelantero(), vista.crear.getArranqueDelantero(), vista.crear.getVelocidadDelantero(), vista.crear.getResistenciaDelantero(), vista.crear.getPrecisionDelantero());
             }
         });
 
         this.vista.actualizar.getActualizarArqueroBtn(new java.awt.event.ActionListener() {
             @Override
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                modelo.actualizarArquero(vista.actualizar.get, vista.actualizar.getEdadArquero(), vista.actualizar.getVelocidadArquero(), vista.actualizar.getResistenciaArquero(), vista.actualizar.getAlturaArquero());
+                modelo.actualizarArquero(vista.actualizar.getEdadMedio(), vista.actualizar.getEdadArquero(), vista.actualizar.getVelocidadArquero(), vista.actualizar.getResistenciaArquero(), vista.actualizar.getAlturaArquero());
                 vista.menuA();
                 modelo.leerLista(vista.menu.getLista_jugadores());
             }
         });
 
-        this.vista.actualizar.getActualizarMedioBtn(new java.awt.event.MouseAdapter() {
+        this.vista.actualizar.getActualizarDefensaBtn(new java.awt.event.ActionListener() {
             @Override
-			public void mouseClicked(java.awt.event.MouseEvent evt) {
-        		modelo.actualizarDefensa(vista.actualizar.getNombreT(), vista.actualizar.getCodigoT(), vista.actualizar.getUnidadT());
-				vista.menuA();
-				modelo.leerLista(vista.menu.getLista_Soldados());
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                modelo.actualizarDefensa(vista.actualizar.getEdadDefensa(), vista.actualizar.getArranqueDefensa(), vista.actualizar.getVelocidadDefensa(), vista.actualizar.getResistenciaDefensa(), vista.actualizar.getAgilidadDefensa());
+                vista.menuA();
+                modelo.leerLista(vista.menu.getLista_jugadores());
             }
         });
 
-        this.vista.actualizar.getGuardarCa().addMouseListener(new java.awt.event.MouseAdapter() {
+        this.vista.actualizar.getActualizarMedioBtn(new java.awt.event.ActionListener() {
             @Override
-			public void mouseClicked(java.awt.event.MouseEvent evt) {
-        		modelo.actualizarCapitan(vista.actualizar.getNombreCa(), vista.actualizar.getCodigoCa(), vista.actualizar.getUnidadCa(), vista.actualizar.getUnidadesCa());
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+        		modelo.actualizarMediocampista(vista.actualizar.getEdadMedio(), vista.actualizar.getArranqueMedio(), vista.actualizar.getVelocidadMedio(), vista.actualizar.getResistenciaMedio(), vista.actualizar.getIQMedio());
 				vista.menuA();
-				modelo.leerLista(vista.menu.getLista_Soldados());
+				modelo.leerLista(vista.menu.getLista_jugadores());
 			}
         });
 
-        this.vista.actualizar.getGuardarCo().addMouseListener(new java.awt.event.MouseAdapter() {
+        this.vista.actualizar.getActualizarDelanteroBtn(new java.awt.event.ActionListener() {
             @Override
-			public void mouseClicked(java.awt.event.MouseEvent evt) {
-        		modelo.actualizarCoronel(vista.actualizar.getNombreCo(), vista.actualizar.getCodigoCo(), vista.actualizar.getUnidadCo(), vista.actualizar.getEstrategiaCo());
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+        		modelo.actualizarDelantero(vista.actualizar.getEdadDelantero(), vista.actualizar.getArranqueDelantero(), vista.actualizar.getVelocidadDelantero(), vista.actualizar.getResistenciaDelantero(), vista.actualizar.getPrecisionDelantero());
 				vista.menuA();
-				modelo.leerLista(vista.menu.getLista_Soldados());
+				modelo.leerLista(vista.menu.getLista_jugadores());
 			}
         });
     }
