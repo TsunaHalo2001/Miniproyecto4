@@ -4,6 +4,9 @@
  */
 package miniproyecto.GUI;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author user
@@ -541,6 +544,105 @@ public class Crear extends javax.swing.JFrame {
     private void DelanteroPreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DelanteroPreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_DelanteroPreActionPerformed
+
+        public JButton getVolver_botonAr() {
+        return VolverAr;
+        }
+        public JButton getVolver_botonDef() {
+        return VolverDef;
+        }
+        public JButton getVolver_botonMed() {
+        return VolverMed;
+        }
+        public JButton getVolver_botonDel() {
+        return VolverDel;
+        }
+        public JButton getGuardarArquero() {
+        return GuardarArqueroBtn;
+        }
+        public JButton getGuardarDefensa() {
+        return GuardarDefensaBtn;
+        }
+        public JButton getGuardarMedio() {
+        return GuardarArqueroBtn2;
+        }
+        public JButton getGuardarDelantero() {
+        return GuardarDelanteroBtn;
+        }
+        public JTextField getNombreArquero() {
+        return ArqueroN;
+        }
+        public JTextField getEdadArquero() {
+        return ArqueroE;
+        }
+        public JTextField getArranqueArquero() {
+        return ArqueroArr;
+        }
+        public JTextField getVelocidadArquero() {
+        return ArqueroVe;
+        }
+        public JTextField getResistenciaArquero() {
+        return ArqueroRe;
+        }
+        public JTextField getAlturaArquero() {
+        return ArqueroAlt;
+        }
+        public JTextField getNombreDefensa() {
+        return DefensaNom;
+        }
+        public JTextField getEdadDefensa() {
+        return DefensaEd;
+        }
+        public JTextField getArranqueDefensa() {
+        return DefensaArr;
+        }
+        public JTextField getVelocidadDefensa() {
+        return DefensaVel;
+        }
+        public JTextField getResistenciaDefensa() {
+        return DefensaRe;
+        }
+        public JTextField getAgilidadDefensa() {
+        return DefensaAgi;
+        }
+        public JTextField getNombreMedio() {
+        return MedioNom;
+        }
+        public JTextField getEdadMedio() {
+        return MedioEdad;
+        }
+        public JTextField getArranqueMedio() {
+        return MedioArr;
+        }
+        public JTextField getVelocidadMedio() {
+        return DefensaVe;
+        }
+        public JTextField getResistenciaMedio() {
+        return MedioRe;
+        }
+        public JTextField getIQMedio() {
+        return MedioIQ;
+        }
+        public JTextField getNombreDelantero() {
+        return DelanteroNom;
+        }
+        public JTextField getEdadDelantero() {
+        return DelanteroEdad;
+        }
+        public JTextField getArranqueDelantero() {
+        return DelanteroArr;
+        }
+        public JTextField getVelocidadDelantero() {
+        return DelanteroVe;
+        }
+        public JTextField getResistenciaDelantero() {
+        return DelanteroRe;
+        }
+        public JTextField getPrecisionDelantero() {
+        return DelanteroPre;
+        }
+
+
 
  
 

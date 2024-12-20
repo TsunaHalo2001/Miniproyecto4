@@ -54,6 +54,10 @@ public class Jugador {
 		this.con = con;
 	}
 
+	public int getCon() {
+		return con;
+	}
+	
 	public void ganarJuego() {
 		juegos++;
 		setEdad();

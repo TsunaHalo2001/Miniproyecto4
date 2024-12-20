@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package miniproyecto.GUI;
+
+import javax.swing.JButton;
+import javax.swing.JList;
+
 
 /**
  *
@@ -99,16 +99,38 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnResActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnResActionPerformed
+    private void btnResActionPerformed(java.awt.event.ActionEvent evt) {
+    }
 
-    /**
-     * @param args the command line arguments
-     */
+    private void Lista_SoldadosValueChanged(javax.swing.event.ListSelectionEvent evt) {                                    
+        
+    }
+
+    public JList<String> getLista_jugadores() {
+        return ListaJ;
+    }
 
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    public JButton getBoton_Crear() {
+        return btnCreate;
+    }
+
+    public JButton getBoton_Actualizar() {
+        return btnUpd;
+    }
+
+    public JButton getBoton_Partido() {
+        return btnMatch;
+    }
+
+    public JButton getResetear() {
+        return btnRes;
+    }
+
+    public JButton getBoton_Eliminar() {
+        return btnDel;
+    }
+    
     private javax.swing.JPanel Bg_1;
     private javax.swing.JLabel IMG;
     private javax.swing.JList<String> ListaJ;

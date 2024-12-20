@@ -4,6 +4,8 @@
  */
 package miniproyecto.GUI;
 
+import javax.swing.JList;
+
 /**
  *
  * @author user
@@ -143,6 +145,42 @@ public class Partido extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    public JList<String> getListPortero() {
+        return LIsta_arqueros;
+    }
+    public JList<String> getLista_defensas() {
+        return Lista_defensas;
+    }
+    public JList<String> getLista_delanteros() {
+        return Lista_delanteros;
+    }
+    public JList<String> getLista_medios() {
+        return LIsta_medios;
+    }
+    public JList<String> getLista_seleccionados() {
+        return Lista_seleccionados;
+    }
+    public javax.swing.JButton getBtnSeleccionados() {
+        return BtnSeleccionados;
+    }
+    public javax.swing.JButton getAñadirArquerosBtn() {
+        return AñadirArquerosBtn;
+    }
+    public javax.swing.JButton getAñadirDefensasBts() {
+        return AñadirDefensasBts;
+    }
+    public javax.swing.JButton getAñadirDelanteroBtn() {
+        return AñadirDelanteroBtn;
+    }
+    public javax.swing.JButton getAñadirMedioBtn() {
+        return AñadirMedioBtn;
+    }
+    public javax.swing.JButton getVolver_Boton() {
+        return VolverDel2;
+    }
+
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
