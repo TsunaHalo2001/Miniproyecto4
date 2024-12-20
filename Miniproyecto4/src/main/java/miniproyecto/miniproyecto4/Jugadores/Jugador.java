@@ -12,6 +12,7 @@ import miniproyecto.miniproyecto4.Enum.EnumPosicion;
  */
 public class Jugador {
 	private static int nJugador = 0;
+	private int con;
 	private final String nombre;
     private EnumPosicion posicion;
 	private final int edadInicial;
@@ -31,6 +32,26 @@ public class Jugador {
 		this.velocidad = velocidad;
 		this.resistencia = resistencia;
 		nJugador++;
+		this.con = nJugador;
+	}
+
+	public String MostrarInformacion(){
+		String info = "<html>" 
+					+ "Nombre: " + this.nombre   + "<br>"
+					+ "Unidad: " + this.edad + "<br>"
+					+ "Numero: " + nJugador + "<br>"
+					+ "Posicion: "  + this.posicion  + "<br>"
+					+ "</html>";
+
+		return info;
+	}
+
+	public static int getNjugadores() {
+        return nJugador;
+    }
+	
+	public void setNjugadores(int con) {
+		this.con = con;
 	}
 
 	public void ganarJuego() {
@@ -112,4 +133,10 @@ public class Jugador {
 	public void setResistencia(int resistencia) {
 		this.resistencia = resistencia;
 	}
+
+	public static void resetear() {
+		nJugador = 0;
+	}
+
+
 }

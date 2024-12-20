@@ -17,6 +17,7 @@ public class Vista {
             this.crear = new Crear();
             this.actualizar = new Actualizar();
             this.partido = new Partido();
+            this.menu.setVisible(true);
         }
 
     	public void menuC() {
