@@ -11,13 +11,14 @@ public class Vista {
 	    Crear crear;
 	    Actualizar actualizar;
 	    Partido partido;
+        
 
         public Vista() {
             this.menu = new Menu();
             this.crear = new Crear();
             this.actualizar = new Actualizar();
             this.partido = new Partido();
-	    this.menu.setVisible(true);
+            this.menu.setVisible(true);
         }
 
     	public void menuC() {

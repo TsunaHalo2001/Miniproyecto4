@@ -65,7 +65,7 @@ public class Menu extends javax.swing.JFrame {
                 btnResActionPerformed(evt);
             }
         });
-        Bg_1.add(btnRes, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 390, 50, 40));
+        Bg_1.add(btnRes, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 400, 40, -1));
 
         btnMatch.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnMatch.setText("Partido");
